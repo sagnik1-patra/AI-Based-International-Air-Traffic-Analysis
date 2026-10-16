@@ -1,0 +1,34 @@
+project_name: AI-Based International Air Traffic Analysis
+dataset: IntlTrafficData.csv
+model_name: Linear Regression
+task: Multi-output Regression
+features:
+- YEAR_START
+- OPERATOR
+targets:
+- PAX_TOTAL
+- FREIGHT_TOTAL
+training_samples: 12
+testing_samples: 9
+training_years:
+- 2005
+- 2006
+- 2007
+- 2008
+testing_years:
+- 2009
+- 2010
+- 2011
+evaluation:
+  passenger_mae: 2341692.8111110795
+  freight_mae: 77765.27777777778
+  passenger_rmse: 2594992.520851479
+  freight_rmse: 98204.49766274319
+  passenger_r2: 0.9255948571775015
+  freight_r2: 0.9519355973412782
+  normalized_error: 0.13126517835931492
+model_files:
+  pkl: air_traffic_model.pkl
+  h5: air_traffic_model.h5
+note: Small historical dataset. Forecasts are exploratory and not validated for long-term
+  use.

@@ -1,0 +1,40 @@
+project: AI-Based International Air Traffic Analysis
+optimization: Particle Swarm Optimization
+model: RandomForestRegressor
+features:
+- YEAR_START
+- OPERATOR
+targets:
+- PAX_TOTAL
+- FREIGHT_TOTAL
+best_hyperparameters:
+  n_estimators: 36
+  max_depth: 4
+  min_samples_split: 2
+  min_samples_leaf: 1
+  max_features: 0.9686674929683065
+pso_settings:
+  num_particles: 10
+  num_iterations: 12
+  inertia_weight: 0.7
+  cognitive_coefficient: 1.5
+  social_coefficient: 1.5
+best_validation_error: 0.11374644010176643
+test_metrics:
+  Passenger_MAE: 4869994.231481482
+  Freight_MAE: 108124.25
+  Passenger_RMSE: 5502349.550946423
+  Freight_RMSE: 132105.6598140543
+  Passenger_R2: 0.6654761496048293
+  Freight_R2: 0.9130231567219933
+training_years:
+- 2005
+- 2006
+- 2007
+- 2008
+testing_years:
+- 2009
+- 2010
+- 2011
+note: Exploratory forecasts based on a small historical dataset. H5 stores a serialized
+  scikit-learn pipeline, not a Keras model.

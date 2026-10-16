@@ -1,0 +1,2 @@
+Algorithm,PSO_Best_Validation_Error,Training_Samples,Testing_Samples,Passenger_MAE,Freight_MAE,Passenger_RMSE,Freight_RMSE,Passenger_R2,Freight_R2
+PSO Optimized Random Forest,0.11374644010176643,12,9,4869994.231481482,108124.25,5502349.550946423,132105.6598140543,0.6654761496048293,0.9130231567219933

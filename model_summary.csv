@@ -1,0 +1,9 @@
+Metric,Value
+Best Model,Linear Regression
+Training Samples,12
+Testing Samples,9
+Passenger R2,0.9255948571775015
+Freight R2,0.9519355973412782
+Passenger MAE,2341692.8111110795
+Freight MAE,77765.27777777778
+Normalized Error,0.13126517835931492
